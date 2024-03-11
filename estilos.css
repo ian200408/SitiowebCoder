@@ -44,7 +44,7 @@ main{
     height: 100vh;
     width: 100%;
     background-color: grey;
-    background-image: url(/img/bicycle-1839005_1920.jpg);
+    background-image: url(./img/bicycle-1839005_1920.jpg);
     background-size:cover;
     background-position: center;
     display: flex;
