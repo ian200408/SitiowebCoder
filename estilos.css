@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color:white;
+}
+.logo span{
+  color:red;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.barra a:hover{
+    color:red;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    background-image: url(/img/bicycle-1839005_1920.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+.CallIndex{
+    color: white;
+    width: 60%;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h1{
+    color: red;
+    margin-bottom: 20px;
+}
+
+
+
+h2{
+    background-color: lightblue;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.sec{
+     height: 650px;
+     width: 100%;
+     background-color: #333;
+}
+
+.item{
+   
+    border: 5px solid black;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.9s;
+}
+
+
+.secbic1{
+    height: 850px;
+    width: 100%;
+    background-color: #333;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img2 img1 img1 img3"
+    "img2 img4 img4 img3"
+    "img5 img5 img6 img6";
+    grid-gap: 20px 20px;
+    
+}
+
+.item:hover{
+    transform: scale(0.9);
+}
+
+.item1{
+    grid-area: img1;
+    background-image: url(img/bike-7950617_1280.jpg);
+}
+
+.item2{
+    grid-area: img2;
+    background-image: url(img/bicycle-1851497_1280.jpg);
+}
+
+.item3{
+    grid-area: img3;
+    background-image: url(img/vintage-photograph-6876622_1280.jpg);
+}
+
+.item4{
+    grid-area: img4;
+    background-image: url(img/bicycle-6580288_1280.jpg);
+}
+
+.item5{
+    grid-area: img5;
+    background-image: url(img/bicycle-1834265_1280.jpg);
+}
+
+.item6{
+    grid-area: img6;
+    background-image: url(img/vintage-bicycle-825736_1280.jpg);
+}
+
+@media only screen and (min-width:320px){
+    .secbic1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:481px){
+    .secbic1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer p{
+    margin-bottom: 20px;
+}
+
+.redes a{
+    color: lightblue;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: fixed;
+    text-align: center;
+    bottom: 40px;
+    right: 40px;
+    color: lightblue;
+    line-height: 40px;    
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.callproductos{
+    display:flex;
+    align-items: baseline;
+    border: 5px black solid;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+h3{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.callNosotros{
+    display:flex;
+    align-items: baseline;
+    border: 5px black solid;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.team{
+    background-color: #333;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    padding-left: 200px;
+}
+
+.card{
+    margin: 10px;
+    width: 70%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 3px solid lightblue;
+}
+
+.card-img{
+    height: 200px;
+    background-image: url(img/amsterdam-6744567_1280.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.card-tittle{
+    font-size: 30px;
+    color: lightblue;
+    padding: 20px;
+}
+
+.card-subtittle{
+    font-size: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-desc{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.card-redes a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.card2{
+    margin: 10px;
+    width: 70%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 3px solid lightblue;
+}
+
+.card-img2{
+    height: 200px;
+    background-image: url(img/amsterdam-6744567_1280.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card-tittle2{
+    font-size: 30px;
+    color: lightblue;
+    padding: 20px;
+}
+
+.card-subtittle2{
+    font-size: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-desc2{
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.card3{
+    margin: 10px;
+    width: 70%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 3px solid lightblue;
+}
+
+.card-img3{
+    height: 200px;
+    background-image: url(img/amsterdam-6744567_1280.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card-tittle3{
+    font-size: 30px;
+    color: lightblue;
+    padding: 20px;
+}
+
+.card-subtittle3{
+    font-size: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-desc3{
+    font-size: 15px;
+    padding: 10px;
+}
+
+@media only screen and (max-width:480){
+    .team{
+        grid-template-columns: 1fr;
+    }
+}
+
+.callservicios{
+    display:flex;
+    align-items: baseline;
+    border: 5px black solid;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ServiciosDisponibles a{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+.CallContacto{
+    display:flex;
+    align-items: baseline;
+    border: 5px black solid;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+
+aside.contacto{
+    color: white;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
